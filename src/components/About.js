@@ -1,17 +1,24 @@
 import React from "react";
-import { FaFacebookF } from "react-icons/fa";
-import { FaTwitter } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
-import { FaPinterestP } from "react-icons/fa";
-import { FaLinkedinIn } from "react-icons/fa";
-import { FaPlay } from "react-icons/fa";
 
-function Banner() {
+function About() {
+  const [header] = React.useState({
+    subHeading: "About Me",
+    text:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+  });
   return (
-    <div className="banner">
+    <div className="about">
       <div className="container">
+        <div className="about__header">
+          <div className="about__content">
+            <h1 className="mainHeader">{header.subHeading}</h1>
+            <p className="mainContent">{header.text}</p>
+            <div className="commonBorder"></div>
+          </div>
+        </div>
+
         <div className="row">
-          <div className="col-6 lg-col-6">
+          {/* <div className="col-6">
             <div className="header__content">
               <div className="header__section">
                 <ul className="head__ul">
@@ -47,10 +54,10 @@ function Banner() {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
           <div className="col-6">
             <div className="banner__img">
-              <img class="bimg" src="/images/man-01.png" alt="man" />
+              <img class="bimg" src="/images/me-01-alt.png" alt="man" />
             </div>
           </div>
         </div>
@@ -59,4 +66,4 @@ function Banner() {
   );
 }
 
-export default Banner;
+export default About;
