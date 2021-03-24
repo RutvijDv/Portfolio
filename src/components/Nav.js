@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, withRouter } from "react-router-dom";
+import { FaBars } from "react-icons/fa";
 
 function Nav() {
   return (
@@ -40,13 +40,11 @@ function Nav() {
 
     <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#.">
-          <h1 className="logo">
-            <Link to="/">Rutvij Vamja</Link>
-          </h1>
+        <a class="navbar-brand" href="/">
+          <h1 className="logo">Rutvij Vamja</h1>
         </a>
         <button
-          class="navbar-toggler"
+          class="navbar-toggler btn-menu"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent"
@@ -54,13 +52,14 @@ function Nav() {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <i class="btn-menu__bars"></i>
+          <span class="sr-only" style={{ color: "#000000" }}></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#.">
-                <Link to="/Services">Projects</Link>
+              <a class="nav-link" href="/Services">
+                Projects
               </a>
             </li>
             <li class="nav-item">
@@ -74,8 +73,8 @@ function Nav() {
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#.">
-                <Link to="/About">Me</Link>
+              <a class="nav-link" href="/About">
+                Me
               </a>
             </li>
             <li class="nav-item">

@@ -11,7 +11,7 @@ function Banner() {
     <div className="banner">
       <div className="container">
         <div className="row">
-          <div className="col-6 lg-col-6">
+          <div className="col-lg-6">
             <div className="header__content">
               <div className="header__section">
                 <ul className="head__ul">
@@ -31,24 +31,24 @@ function Banner() {
                     <FaLinkedinIn />
                   </li>
                 </ul>
-                <h1>I am Rutvij Vamja</h1>
+                <h1>Hey, I'm Rutvij Vamja</h1>
                 <p>
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry.
                 </p>
                 <div className="header__buttons">
-                  <a href="#" class="btn btn-outline">
+                  <a href="#." class="btn btn-outline">
                     My Portfolio
                   </a>
                   &nbsp;&nbsp;&nbsp;
-                  <a href="#" class="btn btn-smart">
+                  <a href="#." class="btn btn-smart">
                     <FaPlay />
                   </a>
                 </div>
               </div>
             </div>
           </div>
-          <div className="col-6">
+          <div className="col-lg-6 bannerImg">
             <div className="banner__img">
               <img class="bimg" src="/images/man-01.png" alt="man" />
             </div>
