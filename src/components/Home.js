@@ -5,10 +5,27 @@ import { FaInstagram } from "react-icons/fa";
 import { FaPinterestP } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaPlay } from "react-icons/fa";
+import Typed from "react-typed";
+import Particles from "react-particles-js";
 
 function Banner() {
   return (
     <div className="banner">
+      <Particles
+        params={{
+          particles: {
+            number: {
+              value: 50,
+              density: { enabled: true, value_area: 9000 },
+            },
+            color: { value: "#000" },
+            shape: {
+              type: "circle",
+              stroke: { width: 2, color: "#000" },
+            },
+          },
+        }}
+      />
       <div className="container">
         <div className="row">
           <div className="col-lg-6">
@@ -31,7 +48,10 @@ function Banner() {
                     <FaLinkedinIn />
                   </li>
                 </ul>
-                <h1>Hey, I'm Rutvij Vamja</h1>
+                <h1>
+                  <Typed strings={["Hey, I'm Rutvij Vamja"]} typeSpeed={59} />
+                </h1>
+
                 <p>
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry.
@@ -50,7 +70,7 @@ function Banner() {
           </div>
           <div className="col-lg-6 bannerImg">
             <div className="banner__img">
-              <img class="bimg" src="/images/man-01.png" alt="man" />
+              <img class="bimg" src="/images/man-02.png" alt="man" />
             </div>
           </div>
         </div>
