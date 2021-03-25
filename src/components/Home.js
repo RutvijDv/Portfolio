@@ -28,7 +28,7 @@ function Banner() {
       />
       <div className="container">
         <div className="row">
-          <div className="col-lg-6">
+          <div className="col-md-6">
             <div className="header__content">
               <div className="header__section">
                 <ul className="head__ul">
@@ -68,7 +68,7 @@ function Banner() {
               </div>
             </div>
           </div>
-          <div className="col-lg-6 bannerImg">
+          <div className="col-md-6 bannerImg">
             <div className="banner__img">
               <img class="bimg" src="/images/man-02.png" alt="man" />
             </div>
