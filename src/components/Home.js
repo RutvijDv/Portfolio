@@ -11,7 +11,7 @@ import Particles from "react-particles-js";
 function Banner() {
   return (
     <div className="banner">
-      <Particles
+      {/* <Particles
         params={{
           particles: {
             number: {
@@ -25,9 +25,14 @@ function Banner() {
             },
           },
         }}
-      />
+      /> */}
       <div className="container">
         <div className="row">
+          <div className="col-md-6 mobile">
+            <div className="banner__img">
+              <img class="bimg" src="/images/man-02.png" alt="man" />
+            </div>
+          </div>
           <div className="col-md-6">
             <div className="header__content">
               <div className="header__section">
@@ -49,13 +54,10 @@ function Banner() {
                   </li>
                 </ul>
                 <h1>
-                  <Typed strings={["Hey, I'm Rutvij Vamja"]} typeSpeed={59} />
+                  <Typed strings={["Hey, I'm Rutvij"]} typeSpeed={59} />
                 </h1>
 
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry.
-                </p>
+                <p>I would rather love to code than Flying a kite Uhh!!.</p>
                 <div className="header__buttons">
                   <a href="#." class="btn btn-outline">
                     My Portfolio
