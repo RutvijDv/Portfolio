@@ -4,7 +4,6 @@ function About() {
   const [header] = React.useState({
     mainHeader: "About Me",
     subHeading: "@RutvijDv",
-    text: "Lorem Ipsum is simply dummy text of the printing",
   });
 
   const [state] = React.useState([
@@ -21,7 +20,10 @@ function About() {
           <div className="projects__content">
             <h3 className="heading">{header.mainHeader}</h3>
             <h1 className="mainHeader">{header.subHeading}</h1>
-            <div className="commonBorder"></div>
+            <div className="common">
+              <div className="commonDot"></div>
+              <div className="commonBorder"></div>
+            </div>
           </div>
         </div>
 

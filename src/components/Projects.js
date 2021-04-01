@@ -41,7 +41,10 @@ function Project() {
             <h1 className="mainHeader">{header.subHeading}</h1>
             <p className="mainContent">{header.text}</p>
             <p className="author">{header.author}</p>
-            <div className="commonBorder"></div>
+            <div className="common">
+              <div className="commonDot"></div>
+              <div className="commonBorder"></div>
+            </div>
           </div>
         </div>
 

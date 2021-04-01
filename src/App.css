@@ -286,6 +286,14 @@ nav ul li {
     margin-bottom: 10px;
     font-weight: 800;
     color: #ff4a57;
+    text-shadow:    
+                   0 3px 0 #80ffdb,
+                   0 4px 0 #80ffdb,
+                   0 5px 0 #80ffdb,
+            
+                
+               
+                0 20px 20px rgba(0,0,0,.3);
 }
 
 .mainHeader {
@@ -304,9 +312,20 @@ nav ul li {
 
 .commonBorder {
     background: #ff4a57;
-    height: 3px;
+    height: 3.4px;
     width: 100px;
+    margin: 14px auto 10px 0;
+}
+.commonDot{
+    background: #ff4a57;
+    border-radius: 50%;
+    height: 12px;
+    width: 12px;
     margin: 10px auto;
+    margin-right: 0;
+}
+.common{
+    display: flex;
 }
 
 
@@ -399,6 +418,29 @@ nav ul li {
     text-align: left;
 }
 
+/*Blogs */
+
+.blogs .comingSoon{
+    margin: auto;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-weight: 900;
+    font-size:570%;
+    color: #ff4a57;
+    max-width: 400px;
+    transform: rotate(-19deg); /* Equal to rotateZ(45deg) */
+    text-shadow:
+          2px 2px 0 #000,
+         2px -2px 0 #42afac,
+        -2px -2px 0 #c6c23f;
+
+}
+
+.horn{
+    height: 300px;
+    width: 300px;
+    margin-left: 38%;
+}
 /* ------------------------------------------------------- BET SCREEN -------------------------------------------------------- */
 @media (min-width: 991px) and (max-width: 1200px) {
     .container {
@@ -514,6 +556,11 @@ nav ul li {
     .aimg{
         height: 75%;
         width: 75%;
+    }
+
+    /* Blogs */
+    .blogs .comingSoon{
+        font-size: 500%;
     }
 
 

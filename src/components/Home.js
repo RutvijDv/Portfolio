@@ -11,7 +11,7 @@ import Particles from "react-particles-js";
 function Banner() {
   return (
     <div className="banner">
-      {/* <Particles
+      <Particles
         params={{
           particles: {
             number: {
@@ -25,7 +25,7 @@ function Banner() {
             },
           },
         }}
-      /> */}
+      />
       <div className="container">
         <div className="row">
           <div className="col-md-6 mobile">

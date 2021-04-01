@@ -27,7 +27,10 @@ function Timeline() {
           <div className="projects__content">
             <h3 className="heading">{header.mainHeader}</h3>
             <h1 className="mainHeader">{header.subHeading}</h1>
-            <div className="commonBorder"></div>
+            <div className="common">
+              <div className="commonDot"></div>
+              <div className="commonBorder"></div>
+            </div>
           </div>
         </div>
       </div>
