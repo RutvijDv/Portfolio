@@ -1,27 +1,36 @@
 import React from "react";
-import { FaFacebookF } from "react-icons/fa";
+import { FaFacebookF, FaTag } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
-import { FaPinterestP } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
+import { FaGoogle } from "react-icons/fa";
 import { FaPlay } from "react-icons/fa";
 import Typed from "react-typed";
 import Particles from "react-particles-js";
 
 function Banner() {
+  const [Tag] = React.useState({
+    p: "< p >",
+    pClose: "< / p >",
+  });
   return (
     <div className="banner">
       <Particles
         params={{
           particles: {
             number: {
-              value: 50,
-              density: { enabled: true, value_area: 9000 },
+              value: 70,
+              density: { enabled: true, value_area: 10000 },
             },
             color: { value: "#000" },
             shape: {
               type: "circle",
               stroke: { width: 2, color: "#000" },
+            },
+            line_linked: {
+              color: "#000",
+              opacity: 0.1,
             },
           },
         }}
@@ -38,26 +47,44 @@ function Banner() {
               <div className="header__section">
                 <ul className="head__ul">
                   <li>
-                    <FaFacebookF />
+                    <a href="##">
+                      <FaGithub size="27px" className="icon" />
+                    </a>
                   </li>
                   <li>
-                    <FaTwitter />
+                    <a href="##">
+                      <FaTwitter size="27px" className="icon" />
+                    </a>
                   </li>
                   <li>
-                    <FaInstagram />
+                    <a href="##">
+                      <FaGoogle size="27px" className="icon" />
+                    </a>
                   </li>
                   <li>
-                    <FaPinterestP />
+                    <a href="##">
+                      <FaFacebookF size="27px" className="icon" />
+                    </a>
                   </li>
-                  <li>
-                    <FaLinkedinIn />
-                  </li>
+
+                  {/* <li>
+                    <a href="##">
+                      <FaLinkedinIn size="18px" className="icon" />
+                    </a>
+                  </li> */}
                 </ul>
                 <h1>
                   <Typed strings={["Hey, I'm Rutvij"]} typeSpeed={59} />
                 </h1>
+                <div className="tag">
+                  <span>{Tag.p}</span>
+                </div>
 
-                <p>I would rather love to code than Flying a kite Uhh!!.</p>
+                <p>I would rather love to code than flying a kite Uhh!!.</p>
+                <div className="tag">
+                  <span>{Tag.pClose}</span>
+                </div>
+
                 <div className="header__buttons">
                   <a href="#." class="btn btn-outline">
                     My Portfolio
