@@ -1,6 +1,10 @@
 import React from "react";
 
 function Card(props) {
+  var tech = [];
+  props.tools.forEach((tool) => {
+    tech.push(<div className={`tool ${tool}`}>{tool}</div>);
+  });
   return (
     <div className="col-lg-4 col-md-6">
       <div className="projects__box">
@@ -9,6 +13,7 @@ function Card(props) {
         </div>
         <div className="projects__box-header">{props.heading}</div>
         <div className="projects__box-p">{props.text}</div>
+        <div className="stack">{tech}</div>
       </div>
     </div>
 

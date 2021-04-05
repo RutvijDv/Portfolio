@@ -1,5 +1,5 @@
 import React from "react";
-import { FaGithub, FaCamera, FaCircleNotch } from "react-icons/fa";
+import { FaGithub, FaCamera, FaCircleNotch, FaAirbnb } from "react-icons/fa";
 import Card from "./Card.js";
 
 function Project() {
@@ -12,10 +12,21 @@ function Project() {
   const [state] = React.useState([
     {
       id: 1,
-      icon: "FaGithub",
+      icon: "FaAirbnb",
       heading: "Web Development",
       text:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text",
+      tools: [
+        "React",
+        "NodeJS",
+        "MongoDB",
+        "npm",
+        "Python",
+        "Express",
+        "Tensorflow",
+        "ChromeApi",
+        "JavaScript",
+      ],
     },
     {
       id: 2,
@@ -67,16 +78,32 @@ function Project() {
         </div> */}
 
         <div className="row">
-          <Card heading={state[0].heading} text={state[0].text}>
+          <Card
+            heading={state[0].heading}
+            text={state[0].text}
+            tools={state[0].tools}
+          >
+            <FaAirbnb className="commonIcons" />
+          </Card>
+          <Card
+            heading={state[0].heading}
+            text={state[0].text}
+            tools={state[0].tools}
+          >
             <FaGithub className="commonIcons" />
           </Card>
-          <Card heading={state[0].heading} text={state[0].text}>
+          <Card
+            heading={state[0].heading}
+            text={state[0].text}
+            tools={state[0].tools}
+          >
             <FaGithub className="commonIcons" />
           </Card>
-          <Card heading={state[0].heading} text={state[0].text}>
-            <FaGithub className="commonIcons" />
-          </Card>
-          <Card heading={state[0].heading} text={state[0].text}>
+          <Card
+            heading={state[0].heading}
+            text={state[0].text}
+            tools={state[0].tools}
+          >
             <FaGithub className="commonIcons" />
           </Card>
         </div>

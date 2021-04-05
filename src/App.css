@@ -441,8 +441,9 @@ nav ul li {
     align-items: center;
     color: #1f2235;
     width: 100%;
-    height: 85px;
+    height: 75px;
     margin-bottom: 35px;
+    /* border-bottom:5px solid #ff4a57 ; */
 
 }
 
@@ -456,13 +457,14 @@ nav ul li {
 
 
 .commonIcons {
-    padding: 3px;
+    padding: 4px;
     border-radius: 50%;
-    background-color: white;
-    color: #1f2235;
+    background-color: transparent;
+    border:5px solid #fc9a9a ;
     width: 85px;
     height: 85px;
-    margin-top: 45px;
+    margin-top: 30px;
+    
 }
 
 .projects__box-header {
@@ -475,10 +477,39 @@ nav ul li {
 
 .projects__box-p {
     /* text-align: center; */
-    padding: 0 20px 40px 20px;
+    padding: 0 20px 10px 20px;
     font-size: 16px;
 }
 
+.stack{
+    padding: 5px 20px;
+    
+}
+
+
+.tool{
+    padding: 2px;
+    display: inline-block;
+    width: fit-content;
+    margin: 3px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+}
+
+.NodeJS{
+    background-color: #dbffe0;
+    color: #00203FFF;
+}
+
+.React{
+    background-color: #dbf3ff;
+    color: #0063B2FF;
+}
+
+.MongoDB{
+    background-color: #f6ffdb;
+    color: #606060FF;
+}
 
 /*About */
 
