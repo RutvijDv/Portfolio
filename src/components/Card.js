@@ -1,9 +1,21 @@
 import React from "react";
 
 function Card(props) {
+  var colorPalette = {
+    React: "blue",
+    NodeJS: "green",
+    MongoDB: "yellow",
+    npm: "grey",
+    Express: "orange",
+    ChromeApi: "purple",
+    JavaScript: "red",
+    Python: "yellow",
+    Tensorflow: "orange",
+  };
   var tech = [];
   props.tools.forEach((tool) => {
-    tech.push(<div className={`tool ${tool}`}>{tool}</div>);
+    var color = colorPalette[`${tool}`];
+    tech.push(<div className={`tool ${color}`}>{tool}</div>);
   });
   return (
     <div className="col-lg-4 col-md-6">

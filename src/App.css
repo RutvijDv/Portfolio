@@ -496,19 +496,38 @@ nav ul li {
     border-radius: 8px;
 }
 
-.NodeJS{
+.green{
     background-color: #dbffe0;
     color: #00203FFF;
 }
 
-.React{
+.blue{
     background-color: #dbf3ff;
     color: #0063B2FF;
 }
 
-.MongoDB{
+.yellow{
     background-color: #f6ffdb;
     color: #606060FF;
+}
+
+.orange{
+    background-color: #ffe9c2;
+    color: #85603f;
+}
+
+.purple{
+    background-color: #f7e1f4;
+    color: #3C1053FF;
+}
+.red{
+    background-color: #f7dcdc;
+    color: #2b2e4a;
+}
+
+.grey{
+    background-color: #e8e8e8;
+    color: #536162;
 }
 
 /*About */
